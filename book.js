@@ -25,8 +25,8 @@ async function runCRUD() {
     console.log('Number of books updated:', updateResult.modifiedCount);
 
     // DELETE: Delete a book by title
-    const deleteResult = await books.deleteOne({ title: 'Node.js Basics' });
-    console.log('Number of books deleted:', deleteResult.deletedCount);
+    // const deleteResult = await books.deleteOne({ title: 'Node.js Basics' });
+    // console.log('Number of books deleted:', deleteResult.deletedCount);
 
     // Close the database connection
     await db.client.close();
